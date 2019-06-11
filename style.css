@@ -1,22 +1,24 @@
-p {
-	color: red;
-	/*margin: 10 px auto 0 px auto;*/
-	text-align: center;
-	}	
-body {
-	background: orange;}
-/*div.test {
-	color: green;
-	margin-right: auto;
-}*/
-h2 {
-	color: white;
-	margin: 10 px auto 0 px auto;}
-.div-ognik {
-	background: black;
-	border: 2px dotted red;
-	width: 333px;
+div {
+	border: 1px solid;
+	margin: 3px;
+	padding: 3px;
 }
-.div-ognik .pic-ognik {
-	width: 95%;
+.header {
+	position: relative;
+	height: 200px;
+}
+.logo-main {
+position: absolute;
+left: 0px;
+top: 0px;
+}
+.name-main {
+position: absolute;
+left: 50%;
+top: 0px;
+}
+.tel-main {
+position: absolute;
+right: 0;
+top: 0px; 	
 }
