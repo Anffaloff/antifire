@@ -1,22 +1,44 @@
 :root {
 	font-size: 0.875em;
 }
+body {
+	background: #F1F1F1;
+}
 div {
 	border: 1px solid;
 	margin: 3px;
 	padding: 3px;
 }
+/*.name-main, .tel-main {
+	border: initial;
+}*/
+
 .header {
 	position: relative;
-	height: 200px;
+	height: 10rem;
+	background: #FFFFFF;
+
 }
 .name-main {
-position: absolute;
-left: 0%;
-top: 10%;
+	position: absolute;
+	left: 0%;
+	bottom: 0.33em;
 }
+img {
+	width: 100%;
+  	height: auto;
+}
+/*h1{
+	font-size: 3rem;
+	padding: 0em 0em;
+	margin: 0em 0em 0em
+}
+h2 {
+	padding: 0em 1em;
+	margin: 0em 0em 0em;
+}*/
 .tel-main {
-position: absolute;
-right: 0;
-top: 10%; 	
+	position: absolute;
+	right: 0;
+	bottom: 0.33em; 	
 }
