@@ -1,6 +1,16 @@
 :root {
-	font-size: 0.875em;
+	font-size: calc(0.5em + 0.5vw);
 }
+/*@media (min-width: 800px) {
+:root {
+font-size: 0.1em;
+	}
+}
+@media (min-width: 1200px) {
+:root {
+font-size: 2em;
+	}
+}*/
 body {
 	background: #F1F1F1;
 }
@@ -22,10 +32,10 @@ div {
 .name-main {
 	position: absolute;
 	left: 0%;
-	bottom: 0.33em;
+	bottom: 0.31em;
 }
 img {
-	width: 100%;
+	width: 75%;
   	height: auto;
 }
 /*h1{
@@ -40,5 +50,10 @@ h2 {
 .tel-main {
 	position: absolute;
 	right: 0;
-	bottom: 0.33em; 	
+	bottom: 0.33em;
+	font-size: 1em;
+}
+.adress-main {
+	font-size: 1em;
+
 }
