@@ -1,59 +1,24 @@
 :root {
 	font-size: calc(0.5em + 0.5vw);
+	box-sizing: border-box;
 }
-/*@media (min-width: 800px) {
-:root {
-font-size: 0.1em;
-	}
+*,
+::before,
+::after {
+	box-sizing: inherit;
 }
-@media (min-width: 1200px) {
-:root {
-font-size: 2em;
-	}
-}*/
 body {
 	background: #F1F1F1;
 }
-div {
+header, div {
 	border: 1px solid;
 	margin: 3px;
 	padding: 3px;
 }
-/*.name-main, .tel-main {
-	border: initial;
-}*/
-
-.header {
-	position: relative;
-	height: 10rem;
-	background: #FFFFFF;
-
+.leftside-header {
+	background: green;
+	width: 50%
 }
-.name-main {
-	position: absolute;
-	left: 0%;
-	bottom: 0.31em;
-}
-img {
-	width: 75%;
-  	height: auto;
-}
-/*h1{
-	font-size: 3rem;
-	padding: 0em 0em;
-	margin: 0em 0em 0em
-}
-h2 {
-	padding: 0em 1em;
-	margin: 0em 0em 0em;
-}*/
-.tel-main {
-	position: absolute;
-	right: 0;
-	bottom: 0.33em;
-	font-size: 1em;
-}
-.adress-main {
-	font-size: 1em;
-
+.logo-pic {
+	width: 100em;
 }
