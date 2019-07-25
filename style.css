@@ -12,13 +12,22 @@ body {
 }
 header, div {
 	border: 1px solid;
-	margin: 3px;
-	padding: 3px;
+	margin: 0px;
+	padding: 0px;
 }
 .leftside-header {
+	position: absolute;
 	background: green;
 	width: 50%
 }
 .logo-pic {
-	width: 100em;
+	width: 10em;
+}
+.logo-main {
+	float: left;
+	width: 50%;
+}
+.tech-main {
+	float: left;	
+	width: 50%;
 }
