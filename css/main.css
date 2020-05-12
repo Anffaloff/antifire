@@ -7,5 +7,17 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height:233px;
+}
+.title{
+    flex-grow: 4;
+    background: yellow;
+}
+.description {
+    flex-grow: 8;
+    background: green;
 }
