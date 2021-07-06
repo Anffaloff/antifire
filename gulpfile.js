@@ -17,14 +17,14 @@ let path = {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css: source_folder + "/scss/style.scss",
         js: source_folder + "/js/script.js",
-        img: source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}",
+        img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf",
     },
     watch: {
         html: source_folder + "/**/*.html",
         css: source_folder + "/scss/**/*.scss",
         js: source_folder + "/js/**/*.js",
-        img: source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}",
+        img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     },
     clean: "./" + project_folder + "/"
 }
@@ -34,7 +34,7 @@ let { src, dest } = require('gulp'),
     browserSync = require('browser-sync').create(),
     fileinclude = require('gulp-file-include'),
     del = require('del'),
-    scss = require('gulp-sass'),
+    scss = require('gulp-sass')(require('sass')),
     autoprefixer = require('gulp-autoprefixer'),
     gcmq = require('gulp-group-css-media-queries'),
     cleanCSS = require('gulp-clean-css'),
@@ -47,8 +47,15 @@ let { src, dest } = require('gulp'),
     svgSprite = require('gulp-svg-sprite'),
     ttf2woff = require('gulp-ttf2woff'),
     ttf2woff2 = require('gulp-ttf2woff2'),
-    fonter = require('gulp-fonter');
+    fonter = require('gulp-fonter'),
 
+    smartGrid = require('smart-grid');
+
+function grid(done) {
+    let options = require ("./smartgrid.js")
+    smartGrid("./#src/scss/", options)
+    done()  
+} 
 
 function browsersync(params) {
     browserSync.init({ 
@@ -209,3 +216,5 @@ exports.html = html;
 exports.build = build; 
 exports.watch = watch;
 exports.default = watch;
+exports.clean = clean;
+exports.grid = grid;
